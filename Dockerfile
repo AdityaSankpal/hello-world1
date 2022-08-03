@@ -1,4 +1,6 @@
-FROM openjdk:8
+FROM openjdk
+COPY target/*.war /
 EXPOSE 8080
-ADD target/hello-world.war hello-world.war  
-ENTRYPOINT ["java","-war","/hello-world.war"]
+ENTRYPOINT ["java","-war","/my-app-1.0-SNAPSHOT.war"]
+
+
