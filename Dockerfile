@@ -1,6 +1,6 @@
 FROM openjdk
 EXPOSE 8080
-ADD hello-world.war hello-world.
-ENTRYPOINT ["java","-war","/hello-world.war"]
+ADD target/helloworld-0.0.1-SNAPSHOT.war helloworld-0.0.1-SNAPSHOT.war
+ENTRYPOINT ["java","-war","/helloworld-0.0.1-SNAPSHOT.war ."]
 
 
